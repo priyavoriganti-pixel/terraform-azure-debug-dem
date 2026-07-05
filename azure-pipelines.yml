@@ -13,9 +13,9 @@ steps:
   displayName: Install Terraform
 
 - task: AzureCLI@2
-  displayName: Terraform Plan with Azure Login
+  displayName: Terraform Plan
   inputs:
-    azureSubscription: 'terraform-connection'   # MUST MATCH your service connection
+    azureSubscription: 'terraform-connection'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
