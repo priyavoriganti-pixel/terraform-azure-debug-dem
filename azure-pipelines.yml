@@ -15,7 +15,7 @@ steps:
 - task: AzureCLI@2
   displayName: Terraform Plan
   inputs:
-    azureSubscription: 'Azure subscription 1'
+    azureSubscription: 'terraform-connection1'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
